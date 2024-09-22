@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./library/slick/slick.css"/>
 <!-- // Add the new slick-theme.css if you want the default styling -->
 <link rel="stylesheet" type="text/css" href="./library/slick/slick-theme.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -216,7 +217,9 @@
                                     </i> 
                                  </div>
                             </header>
-                            <div class="heroarea">
+                            <div class="heroarea"  data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                              <h1 class="head">WEB SOMADHAN</h1>
                              <P class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae corporis alias dolores. <br>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo officiis rerum, consectetur necessitatibus <br>nulla? 
@@ -330,13 +333,22 @@
 <script type="text/javascript" src="./library/slick/slick.min.js"></script>
 
 
+
 <script type="text/javascript">
- $(document).ready(function(){
-    $('.your-class').slick({
-     dots:true
-    });
-  });
-</script>
+    $(document).ready(function(){
+       $('.your-class').slick({
+        dots:true
+       });
+     });
+   </script>
+
+
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
   
 				
 </body>
