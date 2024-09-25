@@ -6,15 +6,13 @@ li{
     list-style: none;
     margin: 25px;
 }
-img{
+header img{
     height: 100px;
     width: 100px;
-    border-radius: 50px;
-    border: 1px solid black;
 }
-a{
+ul a{
     text-decoration: none;
-    color: white;
+    color: rgb(20, 18, 18);
     font-size: 20px;
     font-weight: bolder;
 }
@@ -24,6 +22,7 @@ header{
     background-color: transparent;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 .prothom{
     display: flex;
@@ -37,10 +36,10 @@ header{
     font-size: 20px;
 }
 .bg_img{
-    background: url(./p.avif) no-repeat;
+    background: url(./desktop-wallpaper-development-technology-personal-development.jpg) no-repeat;
     background-size: cover;
     width: 100%;
-    height: 1000px;
+    height: 670px;
 }
 .rain{
     position: relative;
@@ -81,11 +80,12 @@ li:hover a{
     justify-content: center;
     gap: 25px;
     font-size: 25px;
+    padding-top: 15px;
 }
 .t{
     height: 125px;
     width: 200px;
-    background-color: rgb(201, 109, 238);
+    background-color: rgb(238, 210, 109);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,16 +103,19 @@ li:hover a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 250px;
+    padding: 150px;
 }
 .head{
-    font-family: "Bungee Tint", sans-serif;
-    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
     padding: 20px;
+    color: black;
 }
 .para{
     font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 20px;
 }
 .top_bar:hover .icon{
    background-color: blueviolet;
@@ -122,13 +125,14 @@ li:hover a{
     background-color:blueviolet;
 }
 button{
-   background-color: darkviolet;
+   background-color:rgb(255, 255, 255);
    padding: 10px;
    color: black;
    font-size: 20px;
    border-style: double;
    border-radius: 20px;
   justify-content: center;
+  margin-top: 50px;
 }
 .next{
     display: flex;
@@ -137,7 +141,14 @@ button{
     align-items: center;
     padding: 150px;
     color: rgb(7, 7, 8);
+    height: 200px;
+    width: 80%;
    
+}
+.next img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
 }
 .l{
     font-family: "Bungee Tint", sans-serif;
@@ -155,7 +166,7 @@ button{
   gap: 25px;
   width: 28%;
   height: 30%;
-  background: khaki;
+  background: rgb(255, 255, 255);
   padding: 20px;
 }
 .hand{
@@ -168,6 +179,7 @@ button{
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
    
 }
 .your-class div{
@@ -211,7 +223,7 @@ button{
     right: 100px;
 }
 .slide_section{
-    background: url(./feathers-adorn-fashionable-isolated-transparent-background_191095-17704.avif);
+    background: url(./kok.jpg);
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
@@ -228,14 +240,14 @@ button{
 }
 .slick-dots li button:before {
     font-family: 'slick';
-    font-size: 50px;
+    font-size: 55px;
     line-height: 20px;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 20px;
     height: 20px;
-    content: '*';
+    content: '.';
     text-align: center;
     opacity: .25;
     color: rgb(255, 255, 255);
@@ -245,7 +257,7 @@ button{
 }
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: rgb(62, 245, 16);
+    color: rgb(0, 0, 0);
 }
 .overlay{
     height: 100%;
@@ -312,8 +324,8 @@ button{
 }
 .megamenuthree{
     display: none;
-    background: rgb(155, 185, 72);
-    width: 1300px;
+    background: rgb(246, 246, 246);
+    width: 100%;
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -490,4 +502,80 @@ button{
     .middle_item:hover .middle_class{
         display: block;
     }
+}
+.new_work{
+    height: 700px;
+    width: 100%;
+    padding-top: 30px;
+}
+.writingpart h1,h3{
+   text-align:center ;
+}
+.projects_img{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+}
+.portfolio_area{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+}
+.projects_img img{
+    width: 100%;
+   object-fit: cover;
+}
+.projects_img img:hover {
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes scroll{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-75%);
+    }
+}
+.eachproject a{
+    text-decoration: none;
+   padding-right: 340px;
+    color: black;
+}
+.numbering_section{
+    height: 200px;
+    width: 100%;
+    background: rgb(0, 0, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+}
+.numberdiv h1{
+    color: white;
+    font-size: 45px;
+}
+.numberdiv p{
+    color: white;
+    font-size: 25px;
+}
+.joining{
+    background: url(./pro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+.joining h1{
+    font-size: 40px;
+    color: rgb(3, 3, 71);
+}
+.joining img{
+    height: 100px;
+    width: 270px;
+}
+.font{
+    font-size: 50px;
 }
