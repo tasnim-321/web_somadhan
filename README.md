@@ -5,4 +5,4 @@ It is a professional website.
 ## Technologies
 # Html
 # Css
-live link: https://tasnim-321.github.io/restuarent_project/
+live link: https://tasnim-321.github.io/web_somadhan/
