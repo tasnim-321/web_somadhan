@@ -117,13 +117,6 @@ li:hover a{
   font-weight: 800;
   font-size: 20px;
 }
-.top_bar:hover .icon{
-   background-color: blueviolet;
-    gap: 20px;
-}
-.top_bar:hover .info{
-    background-color:blueviolet;
-}
 button{
    background-color:rgb(255, 255, 255);
    padding: 10px;
@@ -505,6 +498,7 @@ button{
 }
 .writingpart h1,h3{
    text-align:center ;
+   font-size: 30px;
 }
 .projects_img{
     width: 400px;
@@ -647,18 +641,7 @@ button{
    font-size: 35px;
    height: 550px;
 }
-.new_class .slick-prev {
-    left: 50px;
-}
 
-.new_class .slick-next {
-    right: 50px;
-}
-.new_class .slick-prev:before, .slick-next:before { 
-    color:none;
-    opacity: 0%;
-
-}
 
 
 
